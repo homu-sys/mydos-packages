@@ -6,9 +6,9 @@ DESCRIPTION_DE: Interaktive MyDOS Paket-Repository-Shell.
 HOMEPAGE: https://github.com/homu-sys/mydos-packages
 LICENSE: MIT
 
-CPV: app-misc/mydos-fastfetch-1.0.0
-PATH: packages/app-misc/mydos-fastfetch-1.0.0.gpkg.tar
-DESCRIPTION: Small system information tool for MyDOS.
+CPV: app-misc/fastfetch-1.0.0
+PATH: packages/app-misc/fastfetch-1.0.0.gpkg.tar
+DESCRIPTION: Fastfetch system information tool ported to MyDOS.
 DESCRIPTION_PT: Pequena ferramenta de informacoes do sistema para MyDOS.
 DESCRIPTION_DE: Kleines Systeminformationswerkzeug fuer MyDOS.
 HOMEPAGE: https://github.com/homu-sys/mydos-packages
