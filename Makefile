@@ -13,7 +13,7 @@ FASTFETCH_ELF := $(BUILD_DIR)/bin/mydos-fastfetch.elf
 SHELL_PKG := packages/app-shells/mydos-shell-1.0.0.gpkg.tar
 FASTFETCH_PKG := packages/app-misc/mydos-fastfetch-1.0.0.gpkg.tar
 
-.PHONY: all clean publish
+.PHONY: all clean publish serve
 
 all: $(SHELL_PKG) $(FASTFETCH_PKG) Packages
 
@@ -68,6 +68,9 @@ publish: all
 	git add Packages packages sources include Makefile
 	git commit -m "Build MyDOS shell and fastfetch packages" || true
 	git push -u origin HEAD
+
+serve: all
+	sudo python3 -m http.server 80 --bind 0.0.0.0
 
 clean:
 	rm -rf $(BUILD_DIR)
